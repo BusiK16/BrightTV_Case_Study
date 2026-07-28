@@ -28,9 +28,9 @@ FROM brighttv.raw_data.user_profiles;
 ---------------------------------------------------------
 SELECT DISTINCT gender
 FROM brighttv.raw_data.user_profiles;
-SELECT COUNT(*)
-FROM workspace.default.bright_tv_user_profiles
-WHERE gender=' ';
+-- SELECT COUNT(*)
+-- FROM workspace.default.bright_tv_user_profiles
+-- WHERE gender=' ';
 
 SELECT
     COUNT(DISTINCT userid) AS subs,
@@ -80,6 +80,7 @@ SELECT COUNT(*) AS cnt
 FROM brighttv.raw_data.user_profiles
 WHERE age IS NULL;
 
+-- CTE using both tables to create one combined script
 WITH 
 user_profiles AS (
 SELECT UserID,

@@ -7,50 +7,19 @@ LIMIT 10;
 -- Applying DATE FUNCTIONS these are used in the date column to extract date i.e. day, month, year
 -- In this select statement 'RecordDate2' is a date column a.k.a timestamp and it will return watch_time in the YYY-MM-DD format 
 
-SELECT TO_DATE(RecordDate2) AS watch_date --TO_DATE Converts a string into a date YYYT-MM-DD
+SELECT TO_DATE(RecordDate2) AS watch_date --TO_DATE Converts a string into a date YYYY-MM-DD
 FROM brighttv.raw_data.viewership;
 
 -- Here, we just added the RecordDate2 column to the select statement and the watch_date column to return both columns
 SELECT 
     RecordDate2,
-    TO_DATE(RecordDate2) AS watch_date --TO_DATE Converts a string into a date YYYT-MM-DD
-FROM brighttv.raw_data.viewership;
-
--- Now let's extract the dates using more DATE FUNCTIONS names, year, and day
--- And add visuals to them 
-SELECT
-    UserID0,
-    RecordDate2,
-    TO_DATE(RecordDate2) AS watch_date, --TO_DATE Converts a string into a date YYYT-MM-DD
-    DAYNAME(TO_DATE(RecordDate2)) AS day_name, -- Extracts the day name
-    MONTHNAME(TO_DATE(RecordDate2)) AS month_name, -- Extracts the month name
-    YEAR(TO_DATE(RecordDate2)) AS event_year, -- Extracts the year value
-    DAY(TO_DATE(RecordDate2)) AS event_dt -- Extracts day value
-FROM brighttv.raw_data.viewership;
-
--- DATE FUNCTIONS allow us to build a CASE statement within them 
-
--- The first code SELECT* is to help see what is in the table
-SELECT*
-FROM brighttv.raw_data.viewership
-LIMIT 10;
-
--- Applying DATE FUNCTIONS these are used in the date column to extract date i.e. day, month, year
--- In this select statement 'RecordDate2' is a date column a.k.a timestamp and it will return watch_time in the YYY-MM-DD format 
-
-SELECT TO_DATE(RecordDate2) AS watch_date --TO_DATE Converts a string into a date YYYT-MM-DD
-FROM brighttv.raw_data.viewership;
-
--- Here, we just added the RecordDate2 column to the select statement and the watch_date column to return both columns
-SELECT 
-    RecordDate2,
-    TO_DATE(RecordDate2) AS watch_date --TO_DATE Converts a string into a date YYYT-MM-DD
+    TO_DATE(RecordDate2) AS watch_date --TO_DATE Converts a string into a date YYYY-MM-DD
 FROM brighttv.raw_data.viewership;
 
 -- Now let's extract the dates using more DATE FUNCTIONS names, year, and day
 SELECT 
     RecordDate2,
-    TO_DATE(RecordDate2) AS watch_date, --TO_DATE Converts a string into a date YYYT-MM-DD
+    TO_DATE(RecordDate2) AS watch_date, --TO_DATE Converts a string into a date YYYY-MM-DD
     DAYNAME(TO_DATE(RecordDate2)) AS day_name, -- Extracts the day name
     MONTHNAME(TO_DATE(RecordDate2)) AS month_name, -- Extracts the month name
     YEAR(TO_DATE(RecordDate2)) AS event_year, -- Extracts the year value

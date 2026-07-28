@@ -123,6 +123,9 @@ SELECT
 
 FROM brighttv.raw_data.user_profiles);
 
+SELECT *
+FROM processed_user_profiles;
+
 -- Checking Active Subscribers
 SELECT COUNT(*) AS cnt,
        COUNT(DISTINCT UserID) AS active_subscribers
