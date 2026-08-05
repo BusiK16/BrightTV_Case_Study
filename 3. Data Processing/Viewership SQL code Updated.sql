@@ -95,4 +95,3 @@ SELECT SUM (number_of_subs) AS subs,
 FROM processed_viewership
 Group BY day_classification;
 
-

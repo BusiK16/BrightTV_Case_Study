@@ -2,7 +2,6 @@
 SELECT *
 FROM brighttv.raw_data.user_profiles;
 
-
 -- This is to check what my data looks like.
 SELECT *
 FROM brighttv.raw_data.user_profiles
@@ -21,6 +20,7 @@ SELECT DISTINCT
        ELSE gender -- if gender is male or female return it as it is 
        END AS sex -- new column name
 FROM brighttv.raw_data.user_profiles;
+
 -------------------------------------------
 -- Race Checks
 -------------------------------------------
