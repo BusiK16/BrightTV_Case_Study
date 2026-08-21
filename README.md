@@ -133,12 +133,18 @@ BrightTV_Case_Study/
 │
 ├── Presentation/
 │   └── BrightTV Presentation
-│
+│      └── BrightTV_Dashboard.xsls
+│      └── BrightTV_Dasborard.pdf
+│      └── BrightTV_PowerBI_dashboard screenshhots
+│      └── BrightTV_Looker_studio.pdf
+│      └── BrightTV_Lovable_Dashboard link
+│      └── BrightTV Databricks
 └── README.md
 ```
 
 ---
-
+## Interactive Dashboard
+[View the BrightTV Interactive Dashboard] (https://datastudio.google.com/s/kGPjwwRloeA)
 ## Tools Used
 
 - Databricks Community Edition
