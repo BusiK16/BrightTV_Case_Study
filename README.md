@@ -144,7 +144,8 @@ BrightTV_Case_Study/
 
 ---
 ## Interactive Dashboard
-[View the BrightTV Interactive Dashboard] (https://datastudio.google.com/s/kGPjwwRloeA)
+[View the BrightTV Interactive Data/Looker Studio Dashboard] (https://datastudio.google.com/s/kGPjwwRloeA)
+([View the BrightTV Interactive Lovable Dashboard] (https://tv-insights-hub.lovable.app/)
 ## Tools Used
 
 - Databricks Community Edition
