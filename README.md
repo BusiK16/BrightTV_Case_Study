@@ -108,7 +108,6 @@ Examples of business insights generated include:
 
 - Which content receives the highest number of views?
 - Which provinces have the highest audience?
-- What devices are most commonly used?
 - Which days of the week have the highest viewership?
 - What is the average viewing duration?
 - How complete is the customer profile information?
